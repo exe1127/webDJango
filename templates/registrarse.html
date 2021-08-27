@@ -1,0 +1,47 @@
+{% extends "inicio.html" %}
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-center text-primary"> Registrarse</h3>
+                </br>
+                <form role="form">
+                    <div class="col-md-6">
+                        <label for="exampleInputEmail1 text-center">
+                            Correo Electronico
+                        </label>
+                        <input type="email" class="form-control"/>
+                    </div>
+                    </br>
+                      <div class="col-md-6">
+                        <label for="exampleInputPassword1">
+                            Nombre de usuario
+                        </label>
+                        <input type="password" class="form-control" id="exampleInputPassword1"/>
+                    </div>
+                    </br>
+                    <div class="col-md-6">
+                        <label for="exampleInputPassword1">
+                            Contraseña
+                        </label>
+                        <input type="password" class="form-control" id="exampleInputPassword1"/>
+                    </div>
+                    </br>
+                    <div class="col-md-6">
+                        <label for="exampleInputPassword1">
+                            Repita su Contraseña
+                        </label>
+                        <input type="password" class="form-control" id="exampleInputPassword1"/>
+                    </div>
+                    </br>
+                    <button type="submit" class="btn btn-primary">
+                        Registrar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="mt-auto text-white-50">
+        <p>Sitio Web creado por el Grupo 1 del curso de Programacion Web Ciclo 2021.
+    </footer>
+{% endblock %}

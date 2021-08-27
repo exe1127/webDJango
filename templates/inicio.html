@@ -1,72 +1,74 @@
 {% load static %}
 <!doctype html>
 <html lang="es" class="h-100">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-   
+
     <title>Aniversario de la Provincia del Chaco</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
-    <link rel="stylesheet" href="{% static cover.css %}" >
-    
+    <link rel="stylesheet" href="{% static cover.css %}">
+
 
     <!-- Bootstrap core CSS -->
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <style>
 
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
         }
-      }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
     </style>
 
-    
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="{% static cover.css %}" >
-  </head>
-  <body class="d-flex h-100 text-center text-white bg-dark">
-    
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="mb-auto">
-    <div>
 
-      <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link active" aria-current="page" href="#">Iniciar Sesion</a>
-        <a class="nav-link" href="#">Registrarse</a>
-        <a class="nav-link" href="#">Contacto</a>
-      </nav>
-    </div>
-  </header>
-    
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="{% static cover.css %}">
+</head>
+<body class="d-flex h-100 text-center text-white bg-dark">
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+        <div>
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+                <a class="nav-link active" aria-current="page" href="#">Iniciar Sesion</a>
+                <a class="nav-link" href="#">Registrarse</a>
+                <a class="nav-link" href="#">Contacto</a>
+            </nav>
+
+        </div>
+
+    </header>
+    {% block content %}
         <main class="px-3">
             <h1>Aniversario de la Provincia del Chaco.</h1>
-            <p class="lead">Se cumplen 70 años desde que en 1951 se sancionara la Ley N°14037 que declaró como Provincia al Territorio Nacional del Chaco.</p>
-                <p>Debido a esto,te invitamos a responder una series de preguntas</p>
+            <p class="lead">Se cumplen 70 años desde que en 1951 se sancionara la Ley N°14037 que declaró como Provincia
+                al Territorio Nacional del Chaco.</p>
+            <p>Debido a esto,te invitamos a responder una series de preguntas</p>
             <p>relacionadas con la historia de nuestra provincia</p>
 
             <br>
             <br>
 
-          </main>
-      
-  <footer class="mt-auto text-white-50">
-    <p>Sitio Web creado por el Grupo 1 del curso de Programacion Web Ciclo 2021.
-  </footer>
-</div>
+        </main>
 
+        <footer class="mt-auto text-white-50">
+            <p>Sitio Web creado por el Grupo 1 del curso de Programacion Web Ciclo 2021.
+        </footer>
+        </div>
+    {% endblock %}
 
-    
-  </body>
+</body>
 </html>
