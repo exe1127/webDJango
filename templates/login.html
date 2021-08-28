@@ -2,24 +2,24 @@
 
 
 {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card">
-                    <form class="box">
-                        <h1>Login</h1>
-                        <p class="text-muted"> Ingrese su usuario y password!</p>
+    <div class="container col-lg-12">
+        <div >
+            <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                <div class="card align-items-center">
+                    <form >
 
-                        <div class="col">
-                            <input type="text" name="" placeholder="Nombre de usuario">
+                        <h3 class="text-center text-primary"> Ingrese su usuario y contraseña</h3>
+                            </br></br>
+                        <div c>
+                            <input type="text" class="form-control " placeholder="Nombre de usuario">
                         </div>
-
-                        <div class="col ">
-                        <input type="password" name=""placeholder="Password">
+                            </br></br>
+                        <div >
+                        <input type="password" class="form-control" placeholder="Password">
                         </div>
-
-                        <div class="col">
-                             <input type="submit" name="" value="Ingresar" href="#">
+                            </br></br>
+                        <div class="col-6">
+                             <input type="submit" class="btn btn-primary" value="Ingresar" href="#">
                         </div>
 
                     </form>
@@ -27,7 +27,9 @@
             </div>
         </div>
     </div>
-
+<footer class="mt-auto text-white-50">
+        <p>Sitio Web creado por el Grupo 1 del curso de Programacion Web Ciclo 2021.
+</footer>
 {% endblock %}
 
 

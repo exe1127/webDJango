@@ -1,37 +1,58 @@
 {% extends "inicio.html" %}
 {% block content %}
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
+    <style>
+
+form { margin:0  auto;
+		width:750px;
+}
+
+</style>
+    <div >
+        <div >
+            <div >
                 <h3 class="text-center text-primary"> Registrarse</h3>
                 </br>
-                <form role="form">
-                    <div class="col-md-6">
-                        <label for="exampleInputEmail1 text-center">
-                            Correo Electronico
-                        </label>
-                        <input type="email" class="form-control"/>
+                <form >
+
+                    <div class="row g-3 ">
+                        <div class=" col-md-10">
+                            <label for="exampleInputEmail1 align-items-center">
+                                Correo Electronico
+                            </label>
+                            </br></br>
+                            <input type="email" class="form-control"/>
+                        </div>
+
+                    </div>
+
+                    </br>
+                    <div class="row g-3 ">
+                        <div class="col-md-10">
+                            <label for="exampleInputPassword1">
+                                Nombre de usuario
+                            </label>
+                            </br></br>
+                            <input type="text" class="form-control" id="exampleInputPassword1"/>
+                        </div>
                     </div>
                     </br>
-                      <div class="col-md-6">
-                        <label for="exampleInputPassword1">
-                            Nombre de usuario
-                        </label>
-                        <input type="password" class="form-control" id="exampleInputPassword1"/>
+                    <div class="row g-3 ">
+                        <div class="col-md-10">
+                            <label for="exampleInputPassword1">
+                                Contraseña
+                            </label>
+                            </br></br>
+                            <input type="password" class="form-control" id="exampleInputPassword1"/>
+                        </div>
                     </div>
                     </br>
-                    <div class="col-md-6">
-                        <label for="exampleInputPassword1">
-                            Contraseña
-                        </label>
-                        <input type="password" class="form-control" id="exampleInputPassword1"/>
-                    </div>
-                    </br>
-                    <div class="col-md-6">
-                        <label for="exampleInputPassword1">
-                            Repita su Contraseña
-                        </label>
-                        <input type="password" class="form-control" id="exampleInputPassword1"/>
+                    <div class="row g-3 ">
+                        <div class="col-md-10">
+                            <label for="exampleInputPassword1">
+                                Repita su Contraseña
+                            </label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"/>
+                        </div>
                     </div>
                     </br>
                     <button type="submit" class="btn btn-primary">
