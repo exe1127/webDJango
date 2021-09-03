@@ -1,0 +1,32 @@
+{% extends "base/base.html" %}
+<style>
+
+</style>
+
+{% block contenido %}
+
+<div>
+	<div class="card text-white bg-dark mb-3 card border-primary mb-3" style="max-width: 20rem;">
+
+		<div class="card-body">
+			<h5 class="card-title">Puntos: {{puntos}}</h5>
+
+			<p class="card-text">Porcentaje: {{porcentaje}}%</p>
+			<p class="card-text">Duracion: {{time}} segundos</p>
+			<p class="card-text">Preguntas Correctas: {{correctas}}</p>
+			<p class="card-text">Preguntas Incorrectas: {{incorrectas}}</p>
+			<p class="card-text">Total de Preguntas: {{total}}</p>
+			<h5>Compartir</h5>
+		</div>
+	</div>
+	<br>
+	<br>
+	{%for p in resul%}
+	<p class="text-white">{{p.pregunta}}</p>
+	<p class="text-white">{{p.rta1}}</p>
+	<p class="text-white">{{p.rta2}}</p>
+	<p class="text-white">{{p.rta3}}</p>
+	<p class="text-white">{{p}}</p>
+
+	{%endfor%}
+	{% endblock contenido %}
