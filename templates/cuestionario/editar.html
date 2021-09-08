@@ -1,0 +1,23 @@
+{% extends "base/base.html" %}
+
+{% block contenido %}
+
+
+<div>
+    <div class="card text-white bg-dark mb-3 card border-primary mb-3" style="max-width: 40rem;">
+        
+        <div class="card-body" >
+                <h1 class="card-title text-primary">Editar Pregunta</h1><br>
+            <div align="left">
+                <form action="" method="POST">
+                {% csrf_token %}
+               
+                {% include "forms.html" with formulario=form %}
+                    <br>
+            </div>
+                 <button type="submit" class="btn btn-outline-primary">Guardar</button>
+                 </form>
+    </div>
+</div>
+    
+{% endblock %}

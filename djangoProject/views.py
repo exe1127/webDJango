@@ -1,22 +1,24 @@
+from django.contrib.auth.models import User
 from django.shortcuts import render
+from apps.usuarios.models import Usuario
 
 def inicio(request):
-    template="inicio.html"
-    ctx={}
-    return render(request, template, ctx)
+    template_name = "inicio.html"
 
+    usuarios = Usuario.objects
+    context = {
+        'usuarios': usuarios
+    }
 
-def login(request):
-    template="login.html"
-    ctx={}
-    return render(request, template, ctx)
-
-def registrarse(request):
-    template="registrarse.html"
-    ctx={}
-    return render(request, template, ctx)
+    return render(request, template_name, context)
 
 def contacto(request):
-    template="contacto.html"
-    ctx={}
-    return render(request, template, ctx)
+    template_name = "contacto.html"
+
+    
+    context = {}
+        
+    
+
+    return render(request, template, context)
+
