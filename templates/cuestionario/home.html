@@ -1,15 +1,10 @@
 {% extends "base/base.html" %}
-<style>
-    .form {
-        margin: 0 auto;
-        width: 250px;
-    }
-</style>
+
 
 {% block contenido %}
 
 <div>
-    <div class="card text-white bg-dark mb-3 card border-primary mb-3" style="max-width: 20rem;">
+    <div class="card text-white bg-dark mb-3 card border-primary mb-3"">
 
         <div class="card-body">
 
@@ -26,21 +21,21 @@
                         <input class="form-check-input" type="radio" name="{{p.pregunta}}" id="gridRadios1"
                             value="rta1">
                         <label class="form-check-label" for="gridRadios1">
-                            {{p.rta1}}
+                            {{p.respuesta1}}
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="{{p.pregunta}}" id="gridRadios2"
                             value="rta2">
                         <label class="form-check-label" for="gridRadios2">
-                            {{p.rta2}}
+                            {{p.respuesta2}}
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="{{p.pregunta}}" id="gridRadios1"
                             value="rta3">
                         <label class="form-check-label" for="gridRadios3">
-                            {{p.rta3}}
+                            {{p.respuesta3}}
                         </label>
                     </div>
 
@@ -56,7 +51,7 @@
         {% block script %}
         <script>
 
-            console.log('hello world')
+            
             const timer = document.getElementById('displaytimer')
             console.log(timer.textContent)
             const inputtag = document.getElementById('timer')
@@ -66,7 +61,7 @@
                 t += 1
                 timer.innerHTML = "<b>Timer: " + t + " seconds</b>"
                 inputtag.value = t
-            }, 1000)
+            }, 500)
         </script>
         {% endblock script %}
 

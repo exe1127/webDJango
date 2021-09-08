@@ -34,10 +34,10 @@
     {%for p in preguntas %}
     <tr>
       <td>{{p.pregunta}}</td>
-      <td>{{p.rta1}}</td>
-      <td>{{p.rta2}}</td>
-      <td>{{p.rta3}}</td>
-      <td>{{p.correct}}</td>
+      <td>{{p.respuesta1}}</td>
+      <td>{{p.respuesta2}}</td>
+      <td>{{p.respuesta3}}</td>
+      <td>{{p.correcta}}</td>
       <td>
         <a href="{% url 'editar' p.pk %}">Editar</a>
       </td>
