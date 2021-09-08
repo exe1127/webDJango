@@ -15,10 +15,7 @@ def inicio(request):
 def contacto(request):
     template_name = "contacto.html"
 
-    
     context = {}
-        
-    
-
+      
     return render(request, template, context)
 
