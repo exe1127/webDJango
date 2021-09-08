@@ -26,13 +26,4 @@ def login(request):
     return render(request, 'usuarios/login.html')
 
 
-class ListarUsuarios(LoginRequiredMixin, ListView):
 
-    template_name = "usuarios/listar.html"
-    model = Usuario
-    context_object_name = 'usuarios'
-
-    def get_queryset(self):
-        if self.request.user.is_staff:
-
-            return Usuario.objects.all()
